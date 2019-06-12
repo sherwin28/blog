@@ -1,0 +1,12 @@
+{
+    "social": {
+        "weibo": "https://weibo.com/1903200010",
+        "github": "https://github.com/sherwin28",
+		"rss": "/atom.xml"
+    },
+    "extern": {
+	    "程序猿DD": "http://blog.didispace.com/",
+	    "Spring Cloud中文网": "https://springcloud.cc/",
+		"周立|Spring Cloud ": "http://itmuch.com/"
+    }
+}

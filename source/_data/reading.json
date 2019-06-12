@@ -1,0 +1,38 @@
+{
+    "define": {
+        "reading": "在读",
+        "readed": "已读",
+        "wanted": "想读"
+    },
+    "contents": {
+        "readed": [{
+            "title": "Spring Boot实战",
+            "cover": "https://img1.doubanio.com/lpic/s29053518.jpg",
+            "review": "spring快捷使用框架",
+            "score": "7.4",
+            "doubanLink": "http://book.douban.com/subject/20281463/"
+        }, {
+            "title": "Java基础入门",
+            "cover": "https://img3.doubanio.com/lpic/s27323402.jpg",
+            "review": "入门书籍。",
+            "score": "7.9",
+            "doubanLink": "https://book.douban.com/subject/25926153/"
+        }],
+		
+		"reading": [{
+            "title": "实战Java虚拟机",
+            "cover": "https://img3.doubanio.com/lpic/s28036503.jpg",
+            "review": "",
+            "score": 8.0,
+            "doubanLink": "https://book.douban.com/subject/26354292/"
+        }],
+
+       "wanted": [{
+            "title": "MySQL性能调优与架构设计",
+            "cover": "https://img1.doubanio.com/lpic/s3780587.jpg",
+            "review": "mysql调优",
+            "score": "8.1",
+            "doubanLink": "https://book.douban.com/subject/3729677/"
+        }]
+    }
+}

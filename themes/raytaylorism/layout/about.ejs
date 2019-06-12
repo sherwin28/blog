@@ -1,0 +1,162 @@
+<% var item = page; %>
+<% var aboutData = site.data.about; %>
+
+<style>
+.pln {
+  color: black;
+}
+.pun {
+  color: black;
+}
+.lit {
+  color: black;
+}
+.typ {
+  color: black;
+}
+.prettyprint {
+  font-family: "Roboto", "sans-serif", "微软雅黑", "Helvetica Neue";
+  font-size: 1em;
+  line-height: 1.5;
+  border: 0px solid #ccc;
+  padding: 0px 0px 0px 10px;
+}
+
+pre{
+    margin:0px;
+}
+bolder{
+    font-weight:bolder;
+}
+
+</style>
+
+<div class="container main-container">
+    <div class="card about-page row">
+        <div class="header <%= theme.color.about_header %>">
+            <div class="avatar-wrapper center-align">
+                <img class="avatar-image circle responsive-img" src="<%= aboutData.avatar %>" alt="User Avatar">
+            </div>
+            <div class="info center-align">
+                <p class="name"><%= aboutData.name %></p>
+                <p class="desc"><%= aboutData.desc %></p>
+            </div>
+
+            <% if (site.data.link && site.data.link.social) { %>
+                <div class="social-group center-align">
+                    <% for (var type in site.data.link.social) { %>
+                        <a class="social-link" href="<%= site.data.link.social[type] %>" target="_blank">
+                            <i class="fa fa-2x fa-<%= type %>"></i>
+                        </a>
+                    <% } %>
+                </div>
+            <% } %>
+        </div>
+
+        <article>
+            <div class="card-content">
+                <section class="about-me">
+                    <h1 class="<%= theme.color.about_title %>-text">
+                        <i class="fa fa-street-view"></i><%= __('about.about') %></h1>
+                    <div class="entry <%= theme.color.link %>-link-context">
+                        <%- item.content %>
+                    </div>
+                </section>
+
+                <% if (aboutData.skills) { %>
+                <section class="skills">
+                    <h1 class="<%= theme.color.about_title %>-text">
+                        <i class="fa fa-tasks"></i>&nbsp;<%= __('about.skills') %></h1>
+                    <ul class="skill-list">
+                        <% for (var skill in aboutData.skills) { %>
+                            <% if (aboutData.skills[skill] > 0) { %>
+                                <li class="row">
+                                    <div class="col s4 m3 l2"><%= skill %></div>
+                                    <div class="col s8 m9 l10">
+                                        <% for (var i = 1; i <= aboutData.skills[skill]; i++) { %>
+                                            <i class="fa fa-star"></i>
+                                        <% } %>
+                                        <% for (; i <= 10; i++) { %>
+                                            <i class="fa fa-star-o"></i>
+                                        <% } %>
+                                    </div>
+                                </li>
+                            <% } else { %>
+                                <li>&nbsp;</li>
+                            <% } %>
+                        <% } %>
+                    </ul>
+                </section>
+                <% } %>
+                <!-- 工作经验 -->
+                <% if (aboutData.works && aboutData.works.length > 0) { %>
+                <section class="works">
+                    <h1 class="<%= theme.color.about_title %>-text">
+                        <i class="fa fa-cubes"></i><%= __('about.works') %></h1>
+                            <% for (var i in aboutData.works) { %>
+                                <div class="project-item">
+                                    <div>
+                                    <strong><%= aboutData.works[i].times %> &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <%= aboutData.works[i].company %>  &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <%= aboutData.works[i].title %>
+                                    </strong>
+                                    </div>
+                                    <div><pre style="white-space:pre-wrap;
+                                                    white-space:-moz-pre-wrap;
+                                                    white-space:-pre-wrap;
+                                                    white-space:-o-pre-wrap;
+                                                    word-wrap:break-word;
+                                                    background-color: white;
+                                                    "><%= aboutData.works[i].duty %></pre>
+                                    </div>
+                                 </div>
+                            <% } %>
+                </section>
+                <% } %>
+
+                <% if (aboutData.projects && aboutData.projects.length > 0) { %>
+                <section class="projects">
+                    <h1 class="<%= theme.color.about_title %>-text">
+                        <i class="fa fa-cubes"></i><%= __('about.projects') %></h1>
+                            <% for (var i in aboutData.projects) { %>
+                        <div class="row">
+                                <div class="project-item">
+                                    <div class="title" style="font-weight:bolder;">
+                                    <%= aboutData.projects[i].name %>
+                                    </div>
+                                    <div class="title" ><strong>开发工具:</strong><%= aboutData.projects[i].tools %></div>
+                                    <div><strong>责任描述:</strong><%= aboutData.projects[i].duty %></div>
+                                    <div><strong>项目描述:</strong><pre style="white-space:pre-wrap;
+                                                    white-space:-moz-pre-wrap;
+                                                    white-space:-pre-wrap;
+                                                    white-space:-o-pre-wrap;
+                                                    word-wrap:break-word;
+                                                    background-color: white;
+                                                    overflow:hidden;
+                                                    "><%= aboutData.projects[i].description %></pre>
+                                    </div>
+                                    <div><strong>项目特点:</strong><pre style="white-space:pre-wrap;
+                                                    white-space:-moz-pre-wrap;
+                                                    white-space:-pre-wrap;
+                                                    white-space:-o-pre-wrap;
+                                                    word-wrap:break-word;
+                                                    background-color: white;
+                                                    "><%= aboutData.projects[i].special %></pre>
+                                    </div>
+                                 </div>
+                        </div>
+                            <% } %>
+                </section>
+                <% } %>
+
+                <% if (aboutData.reward && aboutData.reward.length > 0) { %>
+                <section class="reward">
+                    <%- partial('_partial/plugin/reward') %>
+                </section>
+                <% } %>
+            </div>
+        </article>
+    </div>
+
+    <%- partial('_partial/plugin/comment', {page_id: 'about'}) %>
+</div>
