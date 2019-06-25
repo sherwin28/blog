@@ -19,6 +19,7 @@
 * int 和 Integer 有什么区别，Integer的值缓存范围
 * 包装类，装箱和拆箱
 * String、StringBuilder、StringBuffer
+<!--more-->
 * 重载和重写的区别
 * 抽象类和接口有什么区别
 * 说说反射的用途及实现

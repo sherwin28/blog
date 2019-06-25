@@ -1,13 +1,74 @@
 ---
 title: 关于我
-date: 2018-01-15 17:35:41
+date: 2019-6-13 15:57:17
 layout: about
 ---
-2013年大学本科毕业,一直从事java编程的工作,从懵懵懂懂技术人员到现在认为有点技术的人员(要谦虚).
-1.	熟悉Java开发，熟悉集合、多线程、IO、异常等常用JDK库；熟悉JavaEE开发，能熟练使用SSH等常见非EJB框架；了解网络、缓存、存储、队列、消息；经常关注GitHub或者开源开源中国里面的开源项目；有使用Netty做网络通信的项目经验。
-2.	熟练运用Spring、Hibernate、MyBatis、Struts2、SpringMVC等主流开源框架，独立集成SSH/SSM框架进行轻量级web应用开发；同时也关注国内开源框架，Nutz，Jfinal，Beetle等
-3.	熟练掌握Oracle和MySQL的常用命令和内部表结构关系，善于编写存储过程、函数。
-4.	熟练使用Linux及其常用Shell命令，可以进行Shell/Python脚本开发。
-5.	熟练掌握HTML/CSS、Javascript等Web页面技术, 熟悉使用Bootstrap、Jquery, Ajax，Json、Xml。
-6.	熟练使用SVN版本控制，熟悉使用GIT版本控制。熟悉使用Maven。了解OSGI开发。
+ # 联系方式
+
+- 手机：
+- Email：
+- 微信：
+
+# 个人信息
+
+ - 魏先生/男/1990年 
+ - 本科/计算机科学与技术
+ - 技术博客：[http://blog.weiyuanbiao.cn/](http://blog.weiyuanbiao.cn/) 
+ - 荣誉奖励：获得了什么奖（获奖时间）
+ - Github：[https://github.com/Snailclimb ](https://github.com/Snailclimb)
+ - Github Resume: [http://resume.github.io/?Snailclimb](http://resume.github.io/?Snailclimb)
+ - 期望职位：Java 研发程序员/大数据工程师(Java后台开发为首选)
+ - 期望城市：广州
  
+
+# 项目经历
+
+## xxx项目
+
+### 项目描述
+
+介绍该项目是做什么的、使用到了什么技术以及你对项目整体设计的一个感受
+
+### 责任描述
+
+主要可以从下面三点来写：
+
+1. 在这个项目中你负责了什么、做了什么、担任了什么角色
+2. 从这个项目中你学会了那些东西，使用到了那些技术，学会了那些新技术的使用
+3. 另外项目描述中，最好可以体现自己的综合素质，比如你是如何协调项目组成员协同开发的或者在遇到某一个棘手的问题的时候你是如何解决的。
+
+# 开源项目和技术文章
+
+## 开源项目
+
+- [Java-Guide](https://github.com/Snailclimb/Java-Guide) ：一份涵盖大部分Java程序员所需要掌握的核心知识。Star:3.9K; Fork:0.9k。
+
+
+## 技术文章推荐
+
+- [可能是把Java内存区域讲的最清楚的一篇文章](https://juejin.im/post/5b7d69e4e51d4538ca5730cb)
+- [搞定JVM垃圾回收就是这么简单](https://juejin.im/post/5b85ea54e51d4538dd08f601)
+- [前端&后端程序员必备的Linux基础知识](https://juejin.im/post/5b3b19856fb9a04fa42f8c71)
+- [可能是把Docker的概念讲的最清楚的一篇文章](https://juejin.im/post/5b260ec26fb9a00e8e4b031a)
+
+ 
+# 技能清单
+
+以下均为我熟练使用的技能
+
+- Web开发：PHP/Hack/Node
+- Web框架：ThinkPHP/Yaf/Yii/Lavarel/LazyPHP
+- 前端框架：Bootstrap/AngularJS/EmberJS/HTML5/Cocos2dJS/ionic
+- 前端工具：Bower/Gulp/SaSS/LeSS/PhoneGap
+- 数据库相关：MySQL/PgSQL/PDO/SQLite
+- 版本管理、文档和自动化部署工具：Svn/Git/PHPDoc/Phing/Composer
+- 单元测试：PHPUnit/SimpleTest/Qunit
+- 云和开放平台：SAE/BAE/AWS/微博开放平台/微信应用开发
+
+# 自我评价
+
+自我发挥。切记不要过度自夸！！！
+
+
+### 感谢您花时间阅读我的简历，期待能有机会和您共事。
+
